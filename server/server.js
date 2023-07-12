@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
+const path - require("path/posix")
 
 const app = express();
 app.use(express.json());
@@ -78,6 +79,14 @@ app.put("/questions/:id", async (req, res) => {
     console.log(error);
     res.status(500).send("Internal Server Error");
   }
+});
+
+//production Script 
+app.use(express.static("./client/build"));
+
+app.get("*",(req, res) =>{
+  res.sendFile(path.resolve(__dirname,"client", "build","index.html"))
+
 });
 
 const port = process.env.PORT || 5001;
