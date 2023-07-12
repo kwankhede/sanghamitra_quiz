@@ -1,0 +1,6 @@
+[submodule "client"]
+	path = client
+	url = https://github.com/kwankhede/client.git
+[submodule "Client"]
+	path = Client
+	url = https://github.com/kwankhede/quizz-client.git

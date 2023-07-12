@@ -1,0 +1,133 @@
+.quiz-container {
+    margin: 10 10 10 10;
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+    margin-left: 10%;
+}
+
+.question-container {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    position: relative;
+}
+
+.question-container h2 {
+    margin-bottom: 20px;
+}
+
+.question-container input[type="radio"] {
+    margin-right: 10px;
+}
+
+.answer-choice {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.answer-choice label {
+    align-items: center;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex: 1;
+    font-size: 16px;
+    justify-content: center;
+    padding: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.answer-choice input[type="radio"] {
+    display: none;
+}
+
+.answer-choice label:hover {
+    background-color: #e8e8e8;
+}
+
+.answer-choice input[type="radio"]:checked+label {
+    background-color: #4caf50;
+    border-color: #4caf50;
+    color: #fff;
+}
+
+.answer-choice input[type="radio"]:checked+label:hover {
+    background-color: #43a047;
+}
+
+.submit-button {
+    background-color: #2196f3;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.2s ease;
+}
+
+.submit-button:hover {
+    background-color: #0d8bf2;
+}
+
+.result-container {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+}
+
+.result-container h2 {
+    margin-bottom: 20px;
+}
+
+.result-container p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.submit-button {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.submit-button {
+    background-color: #4CAF50;
+    /* Change the background color */
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /* Change the font size */
+    font-family: Arial, sans-serif;
+    /* Change the font family */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #3e8e41;
+}
+
+.submit-button:active {
+    background-color: #1f4427;
+}
