@@ -11,7 +11,7 @@ const Quiz = ({ onFinish }) => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   useEffect(() => {
-    axios.get("https://sanghamitra-quiz.azurewebsites.net").then((res) => {
+    axios.get("https://quizsanghamitra.azurewebsites.net").then((res) => {
       const questions = res.data;
       const randomQuestions = questions
         .sort(() => Math.random() - 0.5)
